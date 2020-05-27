@@ -1,0 +1,4 @@
+[I 200527 08:15:58 debug:70] Game started on 27-05-2020 at 08:15:58
+[I 200527 08:15:58 debug:71] --------------------------------------
+[D 200527 08:15:58 debug:127] Save file info: [{'valid': True, 'name': 'Thuong', 'avatar': 'person-warlord'}, {'valid': False}, {'valid': False}]
+[I 200527 08:16:00 debug:172] Save chosen: save 1

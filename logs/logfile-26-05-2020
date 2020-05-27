@@ -1,0 +1,13 @@
+[I 200526 06:35:57 release:68] Game started on 26-05-2020 at 06:35:57
+[I 200526 06:35:57 release:69] --------------------------------------
+[D 200526 06:35:58 release:125] Save file info: [{'valid': False}, {'valid': False}, {'valid': False}]
+[I 200526 06:36:03 release:165] Save chosen: save 1
+[I 200526 06:36:05 release:157] Name is Thuong
+[I 200526 06:36:11 debug:70] Game started on 26-05-2020 at 06:36:11
+[I 200526 06:36:11 debug:71] --------------------------------------
+[D 200526 06:36:12 debug:127] Save file info: [{'valid': True, 'name': 'Thuong', 'avatar': 'person-warlord'}, {'valid': False}, {'valid': False}]
+[I 200526 06:36:16 debug:172] Save chosen: save 2
+[I 200526 06:36:18 debug:164] Name is Thuong
+[I 200526 06:36:22 debug:70] Game started on 26-05-2020 at 06:36:22
+[I 200526 06:36:22 debug:71] --------------------------------------
+[D 200526 06:36:23 debug:127] Save file info: [{'valid': True, 'name': 'Thuong', 'avatar': 'person-warlord'}, {'valid': False}, {'valid': False}]

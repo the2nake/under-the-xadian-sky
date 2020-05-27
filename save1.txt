@@ -1,0 +1,2 @@
+name=Thuong
+avatar=person-warlord

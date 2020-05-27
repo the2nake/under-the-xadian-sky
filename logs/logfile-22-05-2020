@@ -1,0 +1,63 @@
+[I 200522 09:32:19 debug:40] Game started on 22-05-2020 at 09:32:19
+[I 200522 09:32:19 debug:41] --------------------------------------
+[I 200522 09:32:20 debug:106] Name is "Thuong"
+[I 200522 09:32:20 debug:107] Avatar is "person-warlord"
+[D 200522 09:32:20 debug:116] Save file info: [{'valid': True, 'name': 'Thuong', 'avatar': 'person-warlord'}, {'valid': False}, {'valid': False}]
+[I 200522 09:32:22 debug:156] Save chosen: save 1
+[I 200522 09:42:46 debug:70] Game started on 22-05-2020 at 09:42:46
+[I 200522 09:42:46 debug:71] --------------------------------------
+[I 200522 09:42:46 debug:136] Name is "Thuong"
+[I 200522 09:42:46 debug:137] Avatar is "person-warlord"
+[D 200522 09:42:46 debug:146] Save file info: [{'valid': True, 'name': 'Thuong', 'avatar': 'person-warlord'}, {'valid': False}, {'valid': False}]
+[I 200522 09:42:49 debug:186] Save chosen: save 1
+[I 200522 09:50:10 debug:70] Game started on 22-05-2020 at 09:50:10
+[I 200522 09:50:10 debug:71] --------------------------------------
+[I 200522 09:50:40 debug:70] Game started on 22-05-2020 at 09:50:40
+[I 200522 09:50:40 debug:71] --------------------------------------
+[I 200522 09:50:52 debug:68] Game started on 22-05-2020 at 09:50:52
+[I 200522 09:50:52 debug:69] --------------------------------------
+[I 200522 09:50:59 debug:68] Game started on 22-05-2020 at 09:50:59
+[I 200522 09:50:59 debug:69] --------------------------------------
+[I 200522 09:51:00 debug:136] Name is "Thuong"
+[I 200522 09:51:00 debug:137] Avatar is "person-warlord"
+[D 200522 09:51:00 debug:146] Save file info: [{'valid': True, 'name': 'Thuong', 'avatar': 'person-warlord'}, {'valid': False}, {'valid': False}]
+[I 200522 09:54:22 debug:68] Game started on 22-05-2020 at 09:54:22
+[I 200522 09:54:22 debug:69] --------------------------------------
+[D 200522 09:54:23 debug:147] Save file info: [{'valid': False, 'name': 'Thuong', 'avatar': 'person-warlord'}, {'valid': False}, {'valid': False}]
+[I 200522 09:56:46 debug:70] Game started on 22-05-2020 at 09:56:46
+[I 200522 09:56:46 debug:71] --------------------------------------
+[D 200522 09:56:47 debug:148] Save file info: [{'valid': False}, {'valid': False}, {'valid': False}]
+[I 200522 09:57:45 debug:70] Game started on 22-05-2020 at 09:57:45
+[I 200522 09:57:45 debug:71] --------------------------------------
+[D 200522 09:57:46 debug:148] Save file info: [{'valid': False, 'name': 'Thuong', 'avatar': 'person-warlord'}, {'valid': False}, {'valid': False}]
+[I 200522 09:57:51 debug:70] Game started on 22-05-2020 at 09:57:51
+[I 200522 09:57:51 debug:71] --------------------------------------
+[D 200522 09:57:52 debug:148] Save file info: [{'valid': False}, {'valid': False}, {'valid': False}]
+[I 200522 09:58:31 debug:70] Game started on 22-05-2020 at 09:58:31
+[I 200522 09:58:31 debug:71] --------------------------------------
+[D 200522 09:58:31 debug:146] Save file info: [{'valid': False, 'name': 'Thuong', 'avatar': 'person-warlord'}, {'valid': False}, {'valid': False}]
+[I 200522 09:58:54 debug:70] Game started on 22-05-2020 at 09:58:54
+[I 200522 09:58:54 debug:71] --------------------------------------
+[D 200522 09:58:55 debug:146] Save file info: [{'valid': False, 'name': 'Thuong', 'avatar': 'person-warlord'}, {'valid': False}, {'valid': False}]
+[I 200522 09:59:25 debug:71] Game started on 22-05-2020 at 09:59:25
+[I 200522 09:59:25 debug:72] --------------------------------------
+[D 200522 09:59:26 debug:147] Save file info: [{'valid': False, 'name': 'Thuong', 'avatar': 'person-warlord'}, {'valid': False}, {'valid': False}]
+[I 200522 09:59:57 debug:71] Game started on 22-05-2020 at 09:59:57
+[I 200522 09:59:57 debug:72] --------------------------------------
+[D 200522 09:59:57 debug:128] Save file info: [{'valid': True, 'name': 'Thuong', 'avatar': 'person-warlord'}, {'valid': False}, {'valid': False}]
+[I 200522 10:01:11 debug:69] Game started on 22-05-2020 at 10:01:11
+[I 200522 10:01:11 debug:70] --------------------------------------
+[I 200522 10:01:26 debug:70] Game started on 22-05-2020 at 10:01:26
+[I 200522 10:01:26 debug:71] --------------------------------------
+[I 200522 10:01:38 debug:70] Game started on 22-05-2020 at 10:01:38
+[I 200522 10:01:38 debug:71] --------------------------------------
+[D 200522 10:01:38 debug:127] Save file info: [{'valid': True, 'name': 'Thuong', 'avatar': 'person-warlord'}, {'valid': False}, {'valid': False}]
+[I 200522 10:02:02 debug:70] Game started on 22-05-2020 at 10:02:02
+[I 200522 10:02:02 debug:71] --------------------------------------
+[D 200522 10:02:02 debug:127] Save file info: [{'valid': True, 'name': 'Thuong', 'avatar': 'person-warlord'}, {'valid': False}, {'valid': False}]
+[I 200522 12:05:05 debug:70] Game started on 22-05-2020 at 12:05:05
+[I 200522 12:05:05 debug:71] --------------------------------------
+[D 200522 12:05:06 debug:127] Save file info: [{'valid': True, 'name': 'Thuong', 'avatar': 'person-warlord'}, {'valid': False}, {'valid': False}]
+[I 200522 12:05:49 debug:68] Game started on 22-05-2020 at 12:05:49
+[I 200522 12:05:49 debug:69] --------------------------------------
+[D 200522 12:05:50 debug:125] Save file info: [{'valid': True, 'name': 'Thuong', 'avatar': 'person-warlord'}, {'valid': False}, {'valid': False}]
