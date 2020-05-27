@@ -2,3 +2,7 @@
 [I 200527 08:15:58 debug:71] --------------------------------------
 [D 200527 08:15:58 debug:127] Save file info: [{'valid': True, 'name': 'Thuong', 'avatar': 'person-warlord'}, {'valid': False}, {'valid': False}]
 [I 200527 08:16:00 debug:172] Save chosen: save 1
+[I 200527 09:57:16 debug:79] Game started on 27-05-2020 at 09:57:16
+[I 200527 09:57:16 debug:80] --------------------------------------
+[D 200527 09:57:17 debug:136] Save file info: [{'valid': True, 'name': 'Thuong', 'avatar': 'person-warlord'}, {'valid': False}, {'valid': False}]
+[I 200527 09:57:20 debug:181] Save chosen: save 1

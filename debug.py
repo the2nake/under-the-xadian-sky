@@ -2,6 +2,8 @@
 This is the game "Under the Xadian Sky", based on the Netflix series "The Dragon Prince".
 Copyright (C) 2020 Vo Thuong
 
+Current version: Unreleased
+
 Dependencies:
 os
 pygame 2.0.0.dev8
