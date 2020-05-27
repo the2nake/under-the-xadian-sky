@@ -1,6 +1,6 @@
 """
-This is the entry point for the game "Under the Xadian Sky", based on the
-Netflix series "The Dragon Prince".
+This is the game "Under the Xadian Sky", based on the Netflix series "The Dragon Prince".
+Copyright (C) 2020 Vo Thuong
 
 Dependencies:
 os
@@ -20,6 +20,9 @@ Current debug version progress:
  * Main game progress: 0%
 """
 
+
+# Input box class
+
 import os
 import pygame
 import tilemap
@@ -27,9 +30,6 @@ import logzero
 import datetime
 from pydraw import *
 from logzero import logger
-
-# Input box class
-
 now = datetime.datetime.now()
 date = now.strftime("%d-%m-%Y")
 time = now.strftime("%H:%M:%S")
@@ -42,7 +42,7 @@ def checksave(savefile: str):
     except FileNotFoundError:
         return False, {}
     savelist = file.readlines()
-    
+
     # tilenames is a tuple of names. tilenames[0] returns all of the names, while tilenames[1] returns the avatar names.
     tilesheet, tilenames = tilemap.init()
 
