@@ -18,7 +18,12 @@ Thank you kenney, for making this possible.
 
 """
 Current debug version progress:
- * Intro screen progress: 50%
+ * TODO Entry screen: (Play, Options, Help)
+ * Intro screen progress: 75%
+    * Save file buttons: Done
+    * Save checking: Done
+    * Name entry: Done
+    * Choosing avatar: Not started
  * Main game progress: 0%
 """
 
@@ -38,12 +43,37 @@ time = now.strftime("%H:%M:%S")
 
 
 def checksave(savefile: str):
-    savedata = {}
-    try:
-        file = open(savefile)
-    except FileNotFoundError:
+    """
+    A function to check if the save is valid\n\n
+
+    Arguments:\n
+    savefile (str): The path to the save file\n
+
+    Remarks:
+    The save file needs to meet these requirements:\n
+    First line begins with 'name=', then the name\n
+    Second line begins with 'avatar=', then the avatar name\n
+    Each line must end with LF ("\\n"), not CRLF ("\\r\\n")\n\n
+
+    Example save:\n
+    name=Thuong\n
+    avatar=person-warlord\n
+    {blank line}
+    """
+
+    # NOTE add savefile auto-fixing
+
+    if savefile[0:4].lower() != "save" or (not savefile.__contains__(".txt") and savefile.__contains__(".")):
         return False, {}
-    savelist = file.readlines()
+
+    savedata = {}
+
+    try:
+        with open(savefile) as file:
+            savelist = file.readlines()
+            file.close()
+    except FileNotFoundError:
+        savedata["valid"] = False
 
     # tilenames is a tuple of names. tilenames[0] returns all of the names, while tilenames[1] returns the avatar names.
     tilesheet, tilenames = tilemap.init()
@@ -57,15 +87,30 @@ def checksave(savefile: str):
             savedata["name"] = savelist[0].split("=")[1][:-1]
             savedata["avatar"] = savelist[1].split("=")[1][:-1]
         else:
+            print("error", savelist[0].split("=")[0], len(savelist[0].split("=")[1]) > 2, savelist != [], savelist[1].split(
+                "=")[0] == "avatar", len(savelist[1].split("=")[1]) > 2, savelist[1].split("=")[1][:-1])
             savedata["valid"] = False
             # clear all empty save files
 
-    except IndexError:
+    except (IndexError, UnboundLocalError):
         savedata["valid"] = False
 
     if savedata["valid"]:
         return True, savedata
     else:
+        # rename the corrupted save file, make blank one
+        if savefile.__contains__(".txt"):
+            portion1 = savefile[:-4]
+        else:
+            portion1 = savefile
+
+        if os.path.exists(portion1 + "-invalid"):
+            os.remove(portion1 + "-invalid")
+
+        os.rename(savefile, portion1 + "-invalid")
+
+        open(savefile, 'a').close()
+
         return False, {}
 
 
@@ -75,9 +120,7 @@ def main():
     '''
 
     logzero.logfile("logs/logfile-" + date)
-
     logger.info("Game started on %s at %s" % (date, time))
-    logger.info("--------------------------------------")
 
     # init
     pygame.init()
@@ -153,6 +196,8 @@ def main():
 
         # ("assets/tilesheet.png", savedata[num - 1]["avatar"], False) if savedata[num - 1]["valid"] else ("person-empty", False)
 
+    logger.info("Starting game ...")
+
     # mainloop
     while introrunning:
         # poll for events
@@ -170,7 +215,7 @@ def main():
                     # write to save file
                     file = open("save%s.txt" % (savechosen), "a+")
                     file.write("name=%s\n" % temp)
-                    logger.info("Name is %s" % temp)
+                    file.close()
                     del input_boxes[i]
                     introrunning = False
 
@@ -238,7 +283,7 @@ def main():
         #                                               (_ // 32)), tilesheet.get(list(tilesheet.keys())[_]), 0, (False, False))
         # draw_tile(screen, 'assets/tilesheet.png', (0, 0),
         #          tilesheet.get(list(tilesheet.keys())[2]), 1)
-        # screen.blit(pygame.image.load("assets/tilesheet.png"), (0, 0))
+        screen.blit(pygame.image.load("assets/tilesheet.png"), (0, 0))
 
         # check keys
         # if keymap.get(pygame.K_SPACE):
@@ -267,6 +312,8 @@ def main():
             pygame.display.update()
             ticks += 1
             clock.tick(30)
+
+    logger.info("Introduction screen ended")
 
 
 main()

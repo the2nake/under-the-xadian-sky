@@ -1,3 +1,0 @@
-name=Thuong
-name=THuong
-name=Thuong

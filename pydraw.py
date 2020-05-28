@@ -212,6 +212,7 @@ def text(screen: pygame.Surface, text: str, pos: tuple, colour: tuple, bgcolour:
     else:
         mode = "rgb"
     rgbcolour = pygame.Color(colour[0], colour[1], colour[2])
+
     if font[0] == None:
         textobj = pygame.font.Font(None, font[1])
         textobj = textobj.render(text, True, rgbcolour)
