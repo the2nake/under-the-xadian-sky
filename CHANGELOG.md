@@ -8,7 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - New icon for the game window
 - Logging files for debugging
-
+- Fixed save file checks
 
 ## [0.1.3] - 2020-05-25
 ## Added
