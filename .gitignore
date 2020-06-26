@@ -1,5 +1,6 @@
 pygame-beginners.mp4
-__pycache__
-.vscode
+__pycache__/
+.vscode/
 __pycache__/pydraw.cpython-38.pyc
 __pycache__/tilemap.cpython-38.pyc
+logs/

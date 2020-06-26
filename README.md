@@ -1,6 +1,6 @@
 # Under the Xadian Sky
 
-A simple game based on the Netflox series "The Dragon Prince"
+A simple game based on the Netflix series "The Dragon Prince"
 
 ## Changes
 ### Latest version: 0.1.3 - 2020-05-25
